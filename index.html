@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern Landing Page</title>
+
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: #F7F9FC;
+    color:black;
+}
+
+/* Navbar */
+.navbar{
+    position:fixed;
+    width:100%;
+    top:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.05);
+    border-bottom:1px solid rgba(255,255,255,0.1);
+    z-index:1000;
+}
+
+.logo{
+    font-size:1.5rem;
+    font-weight:bold;
+    color:#000000;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:rgb(0, 0, 0);
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#38bdf8;
+}
+
+.btn{
+    padding:8px 18px;
+    border:none;
+    border-radius:20px;
+    background:#000000;
+    color:rgb(255, 255, 255);
+    cursor:pointer;
+    transition:0.3s;
+    
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+/* Mobile Menu */
+.menu-toggle{
+    display:none;
+    font-size:25px;
+    cursor:pointer;
+}
+
+/* Hero Section */
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    margin-bottom:25px;
+    opacity:0.8;
+}
+
+.hero-btn{
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    background:#000000;
+    cursor:pointer;
+    color: white;
+    text-decoration: none;
+    font-size:16px;
+    transition:0.3s;
+}
+.hero-btn a{
+
+    color: white;
+    text-decoration: none;
+}
+
+/* About Section */
+
+.about{
+    padding:100px 20px;
+    background:#020617;
+    display:flex;
+    justify-content:center;
+    color: white;
+}
+
+.about-container{
+    max-width:900px;
+    text-align:center;
+    line-height:1.8;
+}
+
+.about h2{
+    font-size:2.5rem;
+    margin-bottom:30px;
+    color:#38bdf8;
+}
+
+.about p{
+    margin-bottom:20px;
+    opacity:0.85;
+    font-size:17px;
+}
+
+/* Highlight Services */
+.about span{
+    color:#38bdf8;
+    font-weight:600;
+}
+
+
+.hero-btn:hover{
+    transform:translateY(-3px);
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-links{
+        position:absolute;
+        top:70px;
+        right:-100%;
+        flex-direction:column;
+        background:#0f172a;
+        width:200px;
+        padding:20px;
+        transition:0.4s;
+    }
+
+    .nav-links.active{
+        right:0;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">Seekers Multimedia Services</div>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+       
+    </ul>
+
+    <div class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Welcome to Seekers Studio</h1>
+        <p>Empowering Brands
+to Thrive in the Digital World</p>
+        <button class="hero-btn"><a href="/pr.html">Explore More</a></button>
+    </div>
+</section>
+<section class="about">
+    <div class="about-container">
+
+        <h2>About Our Company</h2>
+
+        <p>
+            In today’s fast-paced digital world, high-quality visual content plays a vital role in storytelling, branding, and audience engagement. 
+            Our company is dedicated to delivering professional editing services that bring creative visions to life.
+        </p>
+
+        <p>
+            We specialize in <span>wedding video editing</span>, <span>podcast production</span>, 
+            <span>social media reels</span>, and <span>graphic design</span>, ensuring that every project reflects 
+            excellence, creativity, and emotional impact.
+        </p>
+
+        <p>
+            Beyond providing editing services, our company is also committed to empowering individuals who aspire 
+            to build careers in the creative production industry. We offer guidance, training, and hands-on learning 
+            opportunities to help aspiring editors develop their skills, enhance their creativity, and gain the 
+            technical knowledge needed for real-world production work.
+        </p>
+
+        <p>
+            By combining professional service with education and mentorship, we aim to not only produce outstanding 
+            content but also cultivate future creative professionals who can contribute meaningfully to the media 
+            and production industry.
+        </p>
+
+    </div>
+</section>
+
+
+<script>
+    function toggleMenu(){
+    document.getElementById("navLinks").classList.toggle("active");
+}
+
+</script>
+</body>
+</html>

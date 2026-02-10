@@ -12,15 +12,31 @@
   
 </head>
 <body>
-  <div class="topbar">
-    <img class="logo" id="logo" src="/images/LOGO-1.png" alt=""><div class="box"> Seekers Multimedia Services Training Courses</div>
+  <section>
+      <div class="topbar">
+    <img class="logo" id="logo" src="/images/LOGO-1.png" alt="">
+    <div class="box"> <h3>Seekers Multimedia Services Training Courses</h3></div>
 
     <div class="spacer"></div>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+
+        <div class="menu-toggle" onclick="toggleMenu()">
+        ☰
+       </div>
+    </ul>
+
   </div>
+  </section>
+
+<section>
 
   <div class="wrap">
     <aside class="sidebar left">
-      <div class="side-title">COURSES</div>
+      <div class="side-title"><p>COURSES</p></div>
       <div class="side">
           <a class="active" href="pr.html">Adobe Premiere Pro Beginner Training Module</a>
           <a  href="podcast.html">Podcast Editing Training Module</a>
@@ -53,29 +69,38 @@
       <section id="objectives" class="topic">
         <h2>LEARNING OBJECTIVES</h2>
         <p>Define coding standards, architectural rules, or response tone. Keep instructions concise and actionable.</p>
-        <p>By the end of this module, trainees will be able to:</p>
-        <li>Understand what Adobe Premiere Pro is and how it is used in editing</li>
+        <p>By the end of this module, trainees will be able to:</p> 
+        <ul>
+           <li>Understand what Adobe Premiere Pro is and how it is used in editing</li>
         <li>Navigate the Premiere Pro interface</li>
         <li>Import and organize media correctly</li>
         <li>Use basic editing tools and the timeline</li>
         <li>Apply essential keyboard shortcuts for faster editing</li>
         <li>Play, cut, trim, and move clips confidently</li>
         <li>Follow beginner editing best practices</li>
+        </ul>
+       
       </section>
 
       <section id="part_1" class="topic">
         <h2>PART 1: INTRODUCTION TO ADOBE PREMIERE PRO</h2>
         <h3>What is Adobe Premiere Pro?</h3>
         <p>Adobe Premiere Pro is a professional video editing software used to create videos such as:</p>
-        <li> Wedding highlight films</li>
-        <li>Wedding reels for social media</li>
-        <li>Ceremony videos</li>
-        <li>Wedding podcasts and interviews</li>
+        
+        <ul>
+          <li> Wedding highlight films</li>
+          <li>Wedding reels for social media</li>
+          <li>Ceremony videos</li>
+          <li>Wedding podcasts and interviews</li>
+        </ul>
         <P>Premiere Pro allows editors to:</P>
-        <li>Cut and arrange video clips</li>
+        <ul>
+           <li>Cut and arrange video clips</li>
         <li>Sync and edit audio</li>
         <li>Add music, titles, and simple effects</li>
         <li>Export final videos for clients</li>
+        </ul>
+       
       </section>
        <section id="note" >
         <div class="note"><strong>Important for trainees:</strong><br/>Premiere Pro may look complex at first, but you only need to master the basics to start editing weddings properly.
@@ -144,7 +169,7 @@
         <h4>4. Zoom Tool (Z)</h4>
         <li>Used to zoom in and out of the timeline</li>
       </section>
-      <section id="PART_6" class="topic">
+      <section id="part_6" class="topic">
         <h2>PART 6: USING THE TIMELINE</h2>
         <h4>Adding Clips to the Timeline</h4>
         <li>Drag clips from the Project Panel to the Timeline</li>
@@ -251,7 +276,7 @@
 
     <div class="resizer" data-direction="right"></div>
     <aside class="toc right" id="toc">
-      <h4>Table of Conents</h4>
+      <p>Table of Conents</p>
       <a href="#intro">Introduction</a>
       <a href="#overview">Module Overview</a>
       <a href="#objectives">Learning Objectives</a>
@@ -270,6 +295,63 @@
       <a href="#nextModules">NEXT MODULES (AFTER THIS)</a>
     </aside>
   </div>
+  
+</section>
+  <section class="about">
+    <div class="about-container">
+
+       <footer class="footer">
+    <div class="footer-container">
+
+        <!-- Company Info -->
+        <div class="footer-section">
+            <h2 class="footer-logo">Seeker Studio</h2>
+            <p>
+                We specialize in video editing, graphics design, and content production.
+                Our mission is to help individuals and businesses create professional and impactful media.
+            </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>📍 Balasan, Iloilo, Philippines</p>
+            <p>📞 +63 912 345 6789</p>
+            <p>📧 yourcompany@email.com</p>
+        </div>
+
+        <!-- Social Media -->
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">TikTok</a>
+                <a href="#">YouTube</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Seeker Multimedia Studio. All rights reserved.</p>
+    </div>
+</footer>
+
+
+    </div>
+</section>
     <script src="index.js"></script>
 </body>
 </html>

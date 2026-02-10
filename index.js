@@ -75,3 +75,8 @@ const observer = new IntersectionObserver(
 );
 
 sections.forEach(section => observer.observe(section));
+
+
+function toggleMenu(){
+    document.getElementById("navLinks").classList.toggle("active");
+}
